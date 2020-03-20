@@ -1,11 +1,11 @@
-package com.gwdevlabs.urlshortener.service;
+package com.gwdevlabs.urlshortener.api.service;
 
-import com.gwdevlabs.urlshortener.exception.ShortUrlExpiredException;
-import com.gwdevlabs.urlshortener.exception.UrlServiceException;
-import com.gwdevlabs.urlshortener.dto.FullUrlDto;
-import com.gwdevlabs.urlshortener.dto.ShortUrlDto;
-import com.gwdevlabs.urlshortener.model.UrlShortModel;
-import com.gwdevlabs.urlshortener.repository.UrlShortenerRepository;
+import com.gwdevlabs.urlshortener.api.dto.FullUrlDto;
+import com.gwdevlabs.urlshortener.api.dto.ShortUrlDto;
+import com.gwdevlabs.urlshortener.api.exception.ShortUrlExpiredException;
+import com.gwdevlabs.urlshortener.api.exception.UrlServiceException;
+import com.gwdevlabs.urlshortener.api.model.UrlShortModel;
+import com.gwdevlabs.urlshortener.api.repository.UrlShortenerRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,6 +42,8 @@ public class UrlShortenerService {
     }
 
     public FullUrlDto getFullUrl(String shortUrlKey) {
+
+        LOGGER.info("shortUrlKey:{}", shortUrlKey);
 
         // Query DB to find object with Hash
         Long id = idConversionService.decode(shortUrlKey);

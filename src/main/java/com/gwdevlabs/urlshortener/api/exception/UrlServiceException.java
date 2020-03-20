@@ -1,10 +1,10 @@
-package com.gwdevlabs.urlshortener.exception;
+package com.gwdevlabs.urlshortener.api.exception;
 
-public class ShortUrlExpiredException extends RuntimeException {
+public class UrlServiceException extends RuntimeException {
 
     private final String errorMessage;
 
-    public ShortUrlExpiredException(String errorMessage) {
+    public UrlServiceException(String errorMessage) {
         super(errorMessage);
         this.errorMessage = errorMessage;
     }

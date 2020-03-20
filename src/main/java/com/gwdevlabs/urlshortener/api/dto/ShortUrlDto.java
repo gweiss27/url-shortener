@@ -1,4 +1,4 @@
-package com.gwdevlabs.urlshortener.dto;
+package com.gwdevlabs.urlshortener.api.dto;
 
 public class ShortUrlDto {
 

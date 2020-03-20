@@ -1,4 +1,4 @@
-package com.gwdevlabs.urlshortener.exception;
+package com.gwdevlabs.urlshortener.api.exception;
 
 import javax.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpStatus;

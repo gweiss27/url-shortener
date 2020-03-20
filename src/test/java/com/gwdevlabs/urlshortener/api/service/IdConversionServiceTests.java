@@ -1,4 +1,4 @@
-package com.gwdevlabs.urlshortener.service;
+package com.gwdevlabs.urlshortener.api.service;
 
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
@@ -20,7 +20,7 @@ public class IdConversionServiceTests {
 
         // test
         assertEquals("Method did not return expected shortUrlKey for provided ID"
-                    , expected, this.idConversionService.encode(id));
+            , expected, this.idConversionService.encode(id));
 
     }
 
@@ -83,5 +83,4 @@ public class IdConversionServiceTests {
         assertEquals("Method did not return expected ID for provided shortUrlKey"
             , expected, this.idConversionService.decode(shortUrlKey));
     }
-
 }

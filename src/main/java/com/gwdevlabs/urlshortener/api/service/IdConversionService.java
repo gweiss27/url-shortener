@@ -1,4 +1,4 @@
-package com.gwdevlabs.urlshortener.service;
+package com.gwdevlabs.urlshortener.api.service;
 
 import org.springframework.stereotype.Service;
 

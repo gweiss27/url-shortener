@@ -1,4 +1,4 @@
-package com.gwdevlabs.urlshortener.model;
+package com.gwdevlabs.urlshortener.api.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

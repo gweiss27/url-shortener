@@ -1,6 +1,6 @@
-package com.gwdevlabs.urlshortener.repository;
+package com.gwdevlabs.urlshortener.api.repository;
 
-import com.gwdevlabs.urlshortener.model.UrlShortModel;
+import com.gwdevlabs.urlshortener.api.model.UrlShortModel;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
